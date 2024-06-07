@@ -1,4 +1,4 @@
-import { Box, Typography } from '@mui/material'
+import { Box, Link, Typography } from '@mui/material'
 import React from 'react'
 import { GitHub, LinkedIn } from '@mui/icons-material';
 
@@ -42,8 +42,12 @@ export const Footer = () => {
               marginTop: '1rem',
               color: '#fff'
             }}>
-            <LinkedIn sx={{ fontSize: '32px' }} />
-            <GitHub sx={{ fontSize: '32px' }} />
+            <Link target="_blank" rel="noopener noreferrer" href='https://www.linkedin.com/in/emanuel-rojas-guindan/' sx={{ color: 'inherit' }}>
+              <LinkedIn sx={{ fontSize: '32px', cursor: 'pointer', ":hover": { color: '#147efb' } }} />
+            </Link>
+            <Link target="_blank" rel="noopener noreferrer" href='https://github.com/EmaRG1' sx={{ color: 'inherit' }}>
+              <GitHub sx={{ fontSize: '32px', cursor: 'pointer', ":hover": { color: '#C9510C' } }} />
+            </Link>
           </Box>
         </Box>
       </Box>

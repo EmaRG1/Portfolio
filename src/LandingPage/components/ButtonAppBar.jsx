@@ -4,10 +4,23 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-import IconButton from '@mui/material/IconButton';
+import { Link } from 'react-router-dom';
+
 
 
 export default function ButtonAppBar() {
+
+  const navlist = {
+    color: '#2d2e32',
+    fontWeight: '600',
+    textTransform: 'none',
+    fontSize: '1.7rem',
+    ":hover": {
+      color: '#147efb',
+    }
+  }
+
+
   return (
     <Box >
       <AppBar
@@ -35,50 +48,38 @@ export default function ButtonAppBar() {
             component="div"
             sx={{
               fontWeight: '700',
-              fontSize: '2rem'
+              fontSize: '2rem',
+              cursor: 'pointer'
             }}>
             ERG.dev
           </Typography>
+
           <Box>
             <Button
-              sx={{
-                color: '#2d2e32',
-                fontWeight: '600',
-                textTransform: 'none',
-                fontSize: '1.7rem'
-              }}>
+              component={Link}
+              to={"/"}
+              sx={navlist}>
               Home
             </Button>
             <Button
-              sx={{
-                color: '#2d2e32',
-                fontWeight: '600',
-                textTransform: 'none',
-                fontSize: '1.7rem'
-              }}>
+              component={Link}
+              to={'/about'}
+              sx={navlist}>
               About
             </Button>
             <Button
-              sx={{
-                color: '#2d2e32',
-                fontWeight: '600',
-                textTransform: 'none',
-                fontSize: '1.7rem'
-              }}>
+
+              sx={navlist}>
               Projects
             </Button>
             <Button
-              sx={{
-                color: '#2d2e32',
-                fontWeight: '600',
-                textTransform: 'none',
-                fontSize: '1.7rem'
-              }}>
+
+              sx={navlist}>
               Contact
             </Button>
           </Box>
         </Toolbar>
-      </AppBar>3
+      </AppBar>
     </Box>
   );
 }

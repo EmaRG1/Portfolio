@@ -85,6 +85,9 @@ export const Contact = () => {
                   cursor: 'pointer',
                   fontSize: '1.7rem',
                   textDecoration: 'none',
+                  ":hover": {
+                    color: '#147efb',
+                  }
                 }}>
                   Tucuman, Argentina
                 </Typography>
@@ -128,6 +131,9 @@ export const Contact = () => {
                   cursor: 'pointer',
                   fontSize: '1.7rem',
                   textDecoration: 'none',
+                  ":hover": {
+                    color: '#147efb',
+                  }
                 }}>
                   emanuelrojasguindan@gmail.com
                 </Typography>
