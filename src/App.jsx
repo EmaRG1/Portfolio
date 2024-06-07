@@ -1,5 +1,6 @@
 import { LandingPage } from "./LandingPage/LandingPage"
 import { createTheme, ThemeProvider } from "@mui/material"
+import { Footer } from "./LandingPage/components/Footer"
 
 
 const theme = createTheme({
@@ -16,6 +17,7 @@ function App() {
     <>
       <ThemeProvider theme={theme}>
         <LandingPage />
+        <Footer />
       </ThemeProvider>
 
     </>
