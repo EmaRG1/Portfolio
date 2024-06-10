@@ -26,8 +26,8 @@ export const AboutMe = () => {
           <Box
             component="img"
             sx={{
-              height: '32rem',
-              width: '40rem',
+              height: { xs: 'auto', md: '32rem' },
+              width: { xs: '90%', md: '40rem' },
               borderRadius: '10px',
               margin: '0 auto'
             }}

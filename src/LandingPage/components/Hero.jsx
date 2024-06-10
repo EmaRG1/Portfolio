@@ -15,10 +15,10 @@ export default function Hero() {
     backgroundSize: 'cover',
     border: '3px solid #2d2e32',
     borderRadius: '60% 40% 30% 70% / 60% 30% 70% 40%',
-    height: '39rem',
+
     position: 'relative',
     transition: 'all 1s ease-in-out',
-    width: '33rem',
+
     '@keyframes morph': {
       '0%': {
         borderRadius: '60% 40% 30% 70% / 60% 30% 70% 40%',
@@ -114,6 +114,10 @@ export default function Hero() {
             </Stack>
           </Stack>
           <AnimatedBox
+            sx={{
+              height: { xs: '29rem', md: '39rem' },
+              width: { xs: '23rem', md: '33rem' }
+            }}
             component="img"
             alt="The house from the offer."
             src={me2}
