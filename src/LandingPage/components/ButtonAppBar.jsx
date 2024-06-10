@@ -5,10 +5,22 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import { Link } from 'react-router-dom';
+import { IconButton, Menu, MenuItem } from '@mui/material';
+import MenuIcon from '@mui/icons-material/Menu';
 
 
 
 export default function ButtonAppBar() {
+
+  const [anchorNav, setAnchorNav] = React.useState(null);
+
+  const openMenu = (event) => {
+    setAnchorNav(event.currentTarget);
+  };
+
+  const closeMenu = () => {
+    setAnchorNav(null);
+  };
 
   const navlist = {
     color: '#2d2e32',
@@ -32,17 +44,9 @@ export default function ButtonAppBar() {
           fontWeight: '600',
           height: '80px',
           justifyContent: 'center',
-          padding: '25px 40px 25px 50px'
+          padding: { xs: '25px 30px', md: '25px 40px 25px 50px' }
         }}>
         <Toolbar sx={{ justifyContent: 'space-between' }}>
-          {/* <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-            sx={{ mr: 2 }}
-          >
-          </IconButton> */}
           <Typography
             variant="h6"
             component="div"
@@ -53,8 +57,27 @@ export default function ButtonAppBar() {
             }}>
             ERG.dev
           </Typography>
+          <Box sx={{ display: { xs: 'flex', md: 'none' }, justifyContent: 'center' }}>
+            <IconButton
+              edge="start"
+              aria-label="menu"
+              onClick={openMenu}
+            >
+              <MenuIcon sx={{ fontSize: '3rem', color: "#2d2e32" }} />
+            </IconButton>
+            <Menu
+              anchorEl={anchorNav}
+              open={Boolean(anchorNav)}
+              onClose={closeMenu}
+            >
+              <MenuItem sx={{ fontSize: '1.5rem', fontWeight: '500' }} onClick={closeMenu} component={Link} to="/">Home</MenuItem>
+              <MenuItem sx={{ fontSize: '1.5rem', fontWeight: '500' }} onClick={closeMenu} component={Link} to="/about">About</MenuItem>
+              <MenuItem sx={{ fontSize: '1.5rem', fontWeight: '500' }} onClick={closeMenu}>Projects</MenuItem>
+              <MenuItem sx={{ fontSize: '1.5rem', fontWeight: '500' }} onClick={closeMenu}>Contact</MenuItem>
+            </Menu>
+          </Box>
 
-          <Box>
+          <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
             <Button
               component={Link}
               to={"/"}

@@ -16,7 +16,7 @@ export const Projects = () => {
             justifyContent: 'center',
             color: '#2d2e32',
             fontSize: '2.6rem',
-            texAlign: 'center',
+            textAlign: 'center',
             fontWeight: '700'
           }}>New projects coming soon..🤠
         </Typography>
