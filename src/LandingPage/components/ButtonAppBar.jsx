@@ -4,9 +4,9 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-import { Link } from 'react-router-dom';
 import { IconButton, Menu, MenuItem } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
+import { Link as ScrollLink } from 'react-scroll';
 
 
 
@@ -70,35 +70,37 @@ export default function ButtonAppBar() {
               open={Boolean(anchorNav)}
               onClose={closeMenu}
             >
-              <MenuItem sx={{ fontSize: '1.5rem', fontWeight: '500' }} onClick={closeMenu} component={Link} to="/">Home</MenuItem>
-              <MenuItem sx={{ fontSize: '1.5rem', fontWeight: '500' }} onClick={closeMenu} component={Link} to="/about">About</MenuItem>
-              <MenuItem sx={{ fontSize: '1.5rem', fontWeight: '500' }} onClick={closeMenu}>Projects</MenuItem>
-              <MenuItem sx={{ fontSize: '1.5rem', fontWeight: '500' }} onClick={closeMenu}>Contact</MenuItem>
+              <MenuItem sx={{ fontSize: '1.5rem', fontWeight: '500' }} onClick={closeMenu} >
+                <ScrollLink to="home" smooth={true} duration={500}>Home</ScrollLink>
+              </MenuItem>
+              <MenuItem sx={{ fontSize: '1.5rem', fontWeight: '500' }} onClick={closeMenu} >
+                <ScrollLink to="about" smooth={true} duration={500}>About</ScrollLink>
+              </MenuItem>
+              <MenuItem sx={{ fontSize: '1.5rem', fontWeight: '500' }} onClick={closeMenu}>
+                <ScrollLink to="projects" smooth={true} duration={500}>Projects</ScrollLink>
+              </MenuItem>
+              <MenuItem sx={{ fontSize: '1.5rem', fontWeight: '500' }} onClick={closeMenu}>
+                <ScrollLink to="contact" smooth={true} duration={500}>Contact</ScrollLink>
+              </MenuItem>
             </Menu>
           </Box>
 
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
             <Button
-              component={Link}
-              to={"/"}
               sx={navlist}>
-              Home
+              <ScrollLink to="home" smooth={true} duration={500}>Home</ScrollLink>
             </Button>
             <Button
-              component={Link}
-              to={'/about'}
               sx={navlist}>
-              About
+              <ScrollLink to="about" smooth={true} duration={500}>About</ScrollLink>
             </Button>
             <Button
-
               sx={navlist}>
-              Projects
+              <ScrollLink to="projects" smooth={true} duration={500}>Projects</ScrollLink>
             </Button>
             <Button
-
               sx={navlist}>
-              Contact
+              <ScrollLink to="contact" smooth={true} duration={500}>Contact</ScrollLink>
             </Button>
           </Box>
         </Toolbar>

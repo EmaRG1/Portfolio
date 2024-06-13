@@ -10,12 +10,18 @@ export const LandingPage = () => {
   return (
     <>
       <ButtonAppBar />
-      <Hero />
-      <Box>
+      <Box id="home">
+        <Hero />
+      </Box>
+      <Box id="about">
         <AboutMe />
       </Box>
-      <Projects />
-      <Contact />
+      <Box id="projects">
+        <Projects />
+      </Box>
+      <Box id="contact">
+        <Contact />
+      </Box>
     </>
   )
 }
