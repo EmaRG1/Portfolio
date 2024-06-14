@@ -26,7 +26,7 @@ export default function ButtonAppBar() {
     color: '#2d2e32',
     fontWeight: '600',
     textTransform: 'none',
-    fontSize: '1.7rem',
+    fontSize: '2.7rem',
     ":hover": {
       color: '#147efb',
     }
