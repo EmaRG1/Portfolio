@@ -70,7 +70,7 @@ export const AboutMe = () => {
               Hey, my name is Emanuel, and I'm a Frontend Developer. My passion is to create and develop a clean UI/UX for my users.
               <br />
               <br />
-              My main stack currently is React/Next.js in combination with Material UI and TypeScript.
+              My main stack currently is React/Next.js in combination with Material UI.
             </Typography>
 
           </Stack>
