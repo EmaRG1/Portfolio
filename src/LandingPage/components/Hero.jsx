@@ -5,7 +5,7 @@ import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import { Link, styled } from '@mui/material';
 import { GitHub, LinkedIn } from '@mui/icons-material';
-import me3 from '../../assets/images/me3.jpeg'
+import yo from '../../assets/images/yo.jpg'
 
 export default function Hero() {
   const AnimatedBox = styled(Box)(({ theme }) => ({
@@ -116,11 +116,13 @@ export default function Hero() {
           <AnimatedBox
             sx={{
               height: { xs: '29rem', md: '39rem' },
-              width: { xs: '27rem', md: '37rem' }
+              width: { xs: '27rem', md: '37rem' },
+              objectFit: 'cover',
+              
             }}
             component="img"
             alt="The house from the offer."
-            src={me3}
+            src={yo}
           />
         </Container>
         <Container
