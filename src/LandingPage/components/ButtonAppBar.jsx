@@ -7,6 +7,9 @@ import Button from '@mui/material/Button';
 import { IconButton, Menu, MenuItem } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import { Link as ScrollLink } from 'react-scroll';
+import { IoIosMail } from "react-icons/io";
+import { IoHome } from "react-icons/io5";
+import { GrProjects } from "react-icons/gr";
 
 
 
@@ -74,13 +77,16 @@ export default function ButtonAppBar() {
               open={Boolean(anchorNav)}
               onClose={closeMenu}
             >
-              <MenuItem sx={{ fontSize: '1.5rem', fontWeight: '500' }} onClick={closeMenu} >
+              <MenuItem sx={{ fontSize: '2.5rem', fontWeight: '400' }} onClick={closeMenu} >
+                <IoHome style={{ marginRight: '0.7rem', marginBottom: '0.1rem', fontSize: '1.6rem' }} />
                 <ScrollLink to="home" smooth={true} duration={500}>Home</ScrollLink>
               </MenuItem>
-              <MenuItem sx={{ fontSize: '1.5rem', fontWeight: '500' }} onClick={closeMenu}>
+              <MenuItem sx={{ fontSize: '2.5rem', fontWeight: '400' }} onClick={closeMenu}>
+                <GrProjects style={{ marginRight: '0.7rem', marginBottom: '0.1rem', fontSize: '1.6rem' }}/>
                 <ScrollLink to="projects" smooth={true} duration={500}>Projects</ScrollLink>
               </MenuItem>
-              <MenuItem sx={{ fontSize: '1.5rem', fontWeight: '500' }} onClick={closeMenu}>
+              <MenuItem sx={{ fontSize: '2.5rem', fontWeight: '400' }} onClick={closeMenu}>
+                <IoIosMail style={{ marginRight: '0.7rem', marginBottom: '0.1rem', fontSize: '1.6rem' }}/>
                 <ScrollLink to="contact" smooth={true} duration={500}>Contact</ScrollLink>
               </MenuItem>
             </Menu>
