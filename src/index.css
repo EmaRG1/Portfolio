@@ -5,4 +5,16 @@
   font-size: 62.5%;
   scrollbar-color: #8e8e8e #fff;
   scrollbar-width: thin;
+  max-width: 100vw;
+}
+
+htm, body {
+  overflow-x: hidden;
+}
+
+.app {
+  max-width: 100vw;
+}
+.github-icon:hover {
+  color: #C9510C;
 }

@@ -36,15 +36,19 @@ export default function ButtonAppBar() {
   return (
     <Box >
       <AppBar
-        position="fixed"
+
         sx={{
+          position:{md:'static'},
           bgcolor: 'white',
           boxShadow: '0 0 10px rgba(0, 0, 0, .09)',
           color: '#2d2e32',
           fontWeight: '600',
           height: '80px',
           justifyContent: 'center',
-          padding: { xs: '25px 30px', md: '25px 40px 25px 50px' }
+          left: 0,
+          right: 'auto',
+         // padding: { xs: '25px 30px', md: '25px 40px 25px 50px' },
+
         }}>
         <Toolbar sx={{ justifyContent: 'space-between' }}>
           <Typography
@@ -73,9 +77,6 @@ export default function ButtonAppBar() {
               <MenuItem sx={{ fontSize: '1.5rem', fontWeight: '500' }} onClick={closeMenu} >
                 <ScrollLink to="home" smooth={true} duration={500}>Home</ScrollLink>
               </MenuItem>
-              <MenuItem sx={{ fontSize: '1.5rem', fontWeight: '500' }} onClick={closeMenu} >
-                <ScrollLink to="about" smooth={true} duration={500}>About</ScrollLink>
-              </MenuItem>
               <MenuItem sx={{ fontSize: '1.5rem', fontWeight: '500' }} onClick={closeMenu}>
                 <ScrollLink to="projects" smooth={true} duration={500}>Projects</ScrollLink>
               </MenuItem>
@@ -89,10 +90,6 @@ export default function ButtonAppBar() {
             <Button
               sx={navlist}>
               <ScrollLink to="home" smooth={true} duration={500}>Home</ScrollLink>
-            </Button>
-            <Button
-              sx={navlist}>
-              <ScrollLink to="about" smooth={true} duration={500}>About</ScrollLink>
             </Button>
             <Button
               sx={navlist}>

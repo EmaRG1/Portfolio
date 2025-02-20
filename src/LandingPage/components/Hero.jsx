@@ -15,7 +15,7 @@ export default function Hero() {
     backgroundSize: 'cover',
     border: '3px solid #2d2e32',
     borderRadius: '60% 40% 30% 70% / 60% 30% 70% 40%',
-
+    //marginTop:'30px',
     position: 'relative',
     transition: 'all 1s ease-in-out',
 
@@ -51,7 +51,7 @@ export default function Hero() {
           gap: { xs: '3rem', md: '10rem' },
           justifyContent: 'center',
           position: 'relative',
-          height: { xs: 'auto', md: '65rem', xl: '80rem' },
+          height: { xs: 'auto', md: '65rem', xl: '70rem' },
         }}
       >
         <Container
@@ -115,10 +115,9 @@ export default function Hero() {
           </Stack>
           <AnimatedBox
             sx={{
-              height: { xs: '29rem', md: '39rem' },
+              height: { xs: '32rem', md: '44rem' },
               width: { xs: '27rem', md: '37rem' },
               objectFit: 'cover',
-              
             }}
             component="img"
             alt="The house from the offer."

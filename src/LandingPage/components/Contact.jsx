@@ -5,7 +5,7 @@ import MailOutlineOutlinedIcon from '@mui/icons-material/MailOutlineOutlined';
 
 export const Contact = () => {
   return (
-    <Box sx={{ padding: { xs: '8rem 0', md: '11rem 0' } }}>
+    <Box sx={{ padding: { xs: '8rem 0', md: '11rem 0'}, backgroundColor: '#f9f9f9' }}>
       <Box sx={{
         margin: '0 auto',
         maxWidth: '107rem',

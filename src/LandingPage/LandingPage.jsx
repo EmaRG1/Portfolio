@@ -8,20 +8,20 @@ import { Contact } from './components/Contact'
 
 export const LandingPage = () => {
   return (
-    <>
+    <div className='app'>
       <ButtonAppBar />
       <Box id="home">
         <Hero />
       </Box>
-      <Box id="about">
+      {/* <Box id="about">
         <AboutMe />
-      </Box>
+      </Box> */}
       <Box id="projects">
         <Projects />
       </Box>
       <Box id="contact">
         <Contact />
       </Box>
-    </>
+    </div>
   )
 }
