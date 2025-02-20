@@ -31,7 +31,7 @@ export const Footer = () => {
               fontSize: '1.7rem',
             }}
           >
-            Copyright © 2024. All rights are reserved
+            Made with ❤️ by Emanuel, 2025
           </Typography>
           <Box
             sx={{
