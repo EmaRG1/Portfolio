@@ -9,17 +9,17 @@ import { Contact } from './components/Contact'
 export const LandingPage = () => {
   return (
     <div className='app'>
-      <ButtonAppBar />
-      <Box id="home">
+      <ButtonAppBar/>
+      <Box id="home" sx={{overflowX: 'hidden'}}>
         <Hero />
       </Box>
       {/* <Box id="about">
         <AboutMe />
       </Box> */}
-      <Box id="projects">
+      <Box id="projects" sx={{overflowX: 'hidden'}}>
         <Projects />
       </Box>
-      <Box id="contact">
+      <Box id="contact" sx={{overflowX: 'hidden'}}>
         <Contact />
       </Box>
     </div>
