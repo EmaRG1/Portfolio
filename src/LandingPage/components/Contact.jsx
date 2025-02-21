@@ -82,12 +82,10 @@ export const Contact = () => {
                 </Typography>
                 <Typography sx={{
                   color: '#767676',
-                  cursor: 'pointer',
+
                   fontSize: '1.7rem',
                   textDecoration: 'none',
-                  ":hover": {
-                    color: '#147efb',
-                  }
+
                 }}>
                   Tucuman, Argentina
                 </Typography>
@@ -128,12 +126,10 @@ export const Contact = () => {
                 </Typography>
                 <Typography sx={{
                   color: '#767676',
-                  cursor: 'pointer',
+
                   fontSize: '1.7rem',
                   textDecoration: 'none',
-                  ":hover": {
-                    color: '#147efb',
-                  }
+
                 }}>
                   emanuelrojasguindan@gmail.com
                 </Typography>
