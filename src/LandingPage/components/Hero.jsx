@@ -96,7 +96,7 @@ export default function Hero() {
                 marginBottom: { xs: '5rem', md: '0' }
               }}
             >
-              Hi, I'm Emanuel Rojas Guindan. A passionate Front-end React Developer based in Tucumán, Argentina 📍
+              Hi, I'm Emanuel Rojas Guindan. A passionate Front-end developer based in Tucumán, Argentina 📍
             </Typography>
             <Stack direction='row'
               sx={{
