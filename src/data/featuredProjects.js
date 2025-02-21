@@ -20,7 +20,7 @@ export const featuredProjects = [
     title: 'my-journal',
     description: '✨ Personal journal made with redux toolkit, firebase and cloudinary.',
     tags: ['React','Redux', 'Firebase', 'Cloudinary'],
-    url: 'https://myjournalapp.netlify.app/',
+    url: 'https://my-journal-app-101.vercel.app/',
     githubUrl: 'https://github.com/EmaRG1/MyJournalApp',
     icon: 'https://raw.githubusercontent.com/pheralb/react-symbols/main/website/public/images/logo_svg.svg'
   },
