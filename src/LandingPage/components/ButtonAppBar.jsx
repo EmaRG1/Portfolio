@@ -43,17 +43,20 @@ export default function ButtonAppBar() {
         sx={{
           position:{md:'static'},
           bgcolor: 'white',
-          boxShadow: '0 0 10px rgba(0, 0, 0, .09)',
+          boxShadow: 'none',
           color: '#2d2e32',
           fontWeight: '600',
           height: '80px',
+          padding: '0 3rem',
           justifyContent: 'center',
           left: 0,
           right: 'auto',
+          maxWidth: '107rem',
+          margin: '0 auto',
          // padding: { xs: '25px 30px', md: '25px 40px 25px 50px' },
 
         }}>
-        <Toolbar sx={{ justifyContent: 'space-between' }}>
+        <Toolbar sx={{ justifyContent: 'space-between',}}>
           <Typography
             variant="h6"
             component="div"
