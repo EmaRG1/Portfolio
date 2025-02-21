@@ -7,7 +7,7 @@ export const Projects = () => {
 
   return (
     <Box sx={{  backgroundColor: '#f9f9f9'}}>
-      <Box sx={{margin: '0 auto', maxWidth: '107rem', padding: '4rem 4rem'}}>
+      <Box sx={{margin: '0 auto', maxWidth: '107rem', padding: '0 4rem 4rem 4rem'}}>
 
         <Typography variant='h2' sx={{ color: '#2d2e32', fontSize: '2.7rem', fontWeight: '700', marginBottom: '2rem' }}>
           Projects
