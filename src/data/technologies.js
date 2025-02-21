@@ -7,6 +7,7 @@ import react from "../icons/react";
 import reduxIcon from "../icons/redux";
 import firebase from "../icons/firebase";
 import cloudinary from "../icons/cloudinary";
+import javascriptIcon from "../icons/javascriptIcon";
 
 
 export const technologies = [
@@ -45,5 +46,9 @@ export const technologies = [
   {
     stack: 'Cloudinary',
     icon: cloudinary
+  },
+  {
+    stack: 'Javascript',
+    icon: javascriptIcon
   },
 ]

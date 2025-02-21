@@ -24,12 +24,11 @@ export const featuredProjects = [
     githubUrl: 'https://github.com/EmaRG1/MyJournalApp',
     icon: 'https://raw.githubusercontent.com/pheralb/react-symbols/main/website/public/images/logo_svg.svg'
   },
-  // {
-  //   title: 'slug',
-  //   description: '🌱 An open-source URL shortener.',
-  //   tags: ['Next.js', 'T3 Stack', 'Prisma'],
-  //   url: 'https://slug.vercel.app/',
-  //   githubUrl: 'https://github.com/pheralb/slug',
-  //   icon: 'https://raw.githubusercontent.com/pheralb/slug/main/public/images/logo_svg.svg'
-  // }
+   {
+     title: 'my-own-react',
+     description: '💻 React library built from scratch using javascript (work still in progress).',
+     tags: ['Javascript'],
+     githubUrl: 'https://github.com/EmaRG1/my-own-react',
+     icon: 'https://raw.githubusercontent.com/pheralb/slug/main/public/images/logo_svg.svg'
+   }
 ];
