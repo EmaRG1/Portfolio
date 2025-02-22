@@ -25,6 +25,14 @@ export default function ButtonAppBar() {
     setAnchorNav(null);
   };
 
+  const nav = (e) => {
+      if (e.key === 'Enter') {
+        const sectionId = e.target.textContent.toLowerCase();
+        const section = document.getElementById(sectionId);
+        section.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
   const navlist = {
     color: '#2d2e32',
     fontWeight: '600',
@@ -80,15 +88,30 @@ export default function ButtonAppBar() {
               open={Boolean(anchorNav)}
               onClose={closeMenu}
             >
-              <MenuItem sx={{ fontSize: '2.5rem', fontWeight: '400' }} onClick={closeMenu} >
+              <MenuItem
+                sx={{ fontSize: '2.5rem', fontWeight: '400' }}
+                onClick={closeMenu}
+                tabIndex={0}
+                onKeyDown={nav}
+              >
                 <IoHome style={{ marginRight: '0.7rem', marginBottom: '0.1rem', fontSize: '1.6rem' }} />
                 <ScrollLink to="home" smooth={true} duration={500}>Home</ScrollLink>
               </MenuItem>
-              <MenuItem sx={{ fontSize: '2.5rem', fontWeight: '400' }} onClick={closeMenu}>
+              <MenuItem
+                sx={{ fontSize: '2.5rem', fontWeight: '400' }}
+                onClick={closeMenu}
+                tabIndex={0}
+                onKeyDown={nav}
+              >
                 <GrProjects style={{ marginRight: '0.7rem', marginBottom: '0.1rem', fontSize: '1.6rem' }}/>
                 <ScrollLink to="projects" smooth={true} duration={500}>Projects</ScrollLink>
               </MenuItem>
-              <MenuItem sx={{ fontSize: '2.5rem', fontWeight: '400' }} onClick={closeMenu}>
+              <MenuItem
+                sx={{ fontSize: '2.5rem', fontWeight: '400' }}
+                onClick={closeMenu}
+                tabIndex={0}
+                onKeyDown={nav}
+              >
                 <IoIosMail style={{ marginRight: '0.7rem', marginBottom: '0.1rem', fontSize: '1.6rem' }}/>
                 <ScrollLink to="contact" smooth={true} duration={500}>Contact</ScrollLink>
               </MenuItem>
@@ -97,15 +120,24 @@ export default function ButtonAppBar() {
 
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
             <Button
-              sx={navlist}>
+              sx={navlist}
+              tabIndex={0}
+              onKeyDown={nav}
+            >
               <ScrollLink to="home" smooth={true} duration={500}>Home</ScrollLink>
             </Button>
             <Button
-              sx={navlist}>
+              sx={navlist}
+              tabIndex={0}
+              onKeyDown={nav}
+            >
               <ScrollLink to="projects" smooth={true} duration={500}>Projects</ScrollLink>
             </Button>
             <Button
-              sx={navlist}>
+              sx={navlist}
+              tabIndex={0}
+              onKeyDown={nav}
+            >
               <ScrollLink to="contact" smooth={true} duration={500}>Contact</ScrollLink>
             </Button>
           </Box>
