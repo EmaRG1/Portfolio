@@ -59,8 +59,6 @@ const ProjectCard = ({ title, description, tags, url, githubUrl }) => {
               <IoLogoGithub
                 title={`view ${title} repository on GitHub`}
                 style={{
-                  
-                  //marginBottom: "0.1rem",
                   fontSize: "2rem",
                 }
               }
